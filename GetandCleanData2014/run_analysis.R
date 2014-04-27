@@ -258,7 +258,5 @@
 		samsungData.meansfinal<-samsungData.means[, 1:6]
 		samsungData.meansfinal<-data.frame(samsungData.meansfinal)
 		colnames(samsungData.meansfinal)<-c("Item_Number", "Subject", "Activity", "Variable_Number", "Count", "Mean")
-	##Save dataset .Rda file
-		save(samsungData.meansfinal,file="samsungDataMeans.rda")
-	
-
+	##Guess what? Website does not accept rda files; saving it to *.txt file instead
+	  write.table(samsungData.meansfinal, file = "./samsungDataMeans.txt", sep = "\t")
