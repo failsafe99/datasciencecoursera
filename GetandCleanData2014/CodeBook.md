@@ -1,7 +1,6 @@
-CodeBook: Samsung Human Activity Recognition Dataset and Means Dataset
-========================
-  
-##The Samsung dataset (samsungData) contains the following variables:
+###CodeBook: Samsung Human Activity Recognition Dataset and Means Dataset
+
+###The Samsung dataset (samsungData) contains the following variables:
 * Subject - Subject number
 * Activity - Activity, coded as numbers 1-6 
   * 1 Walking
@@ -11,9 +10,9 @@ CodeBook: Samsung Human Activity Recognition Dataset and Means Dataset
   * 5 Standing
   * 6 Laying
   
-##Notes about Features - full features information is available in features_info.txt.  To re-iterate, the features are measurements of accelerometer (-Acc) and gyroscope (-Gyro) 3-axial raw signals(->tAcc-XYZ and tGyro-XYZ).  The t- prefix denotes the time.  The accleration signal was seperated into body (-BodyAcc) and gravity(-GravityAcc) signals (->tBodyAcc-XYZ and tGravityAcc-XYZ).  The body linear acceleration(-BodyAccJerk) and angular(-BodyGyroJerk) velocities were dervied to obtain Jerk signals (->tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ).  Magnitudes of the signals were also dervied (->tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).  Lastly, a Fast Fourier Transform (FFT) was applied to some signals to produce features (->fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag; f prefix denotes FFT).
+###Notes about Features - full features information is available in features_info.txt.  To re-iterate, the features are measurements of accelerometer (-Acc) and gyroscope (-Gyro) 3-axial raw signals(->tAcc-XYZ and tGyro-XYZ).  The t- prefix denotes the time.  The accleration signal was seperated into body (-BodyAcc) and gravity(-GravityAcc) signals (->tBodyAcc-XYZ and tGravityAcc-XYZ).  The body linear acceleration(-BodyAccJerk) and angular(-BodyGyroJerk) velocities were dervied to obtain Jerk signals (->tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ).  Magnitudes of the signals were also dervied (->tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).  Lastly, a Fast Fourier Transform (FFT) was applied to some signals to produce features (->fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag; f prefix denotes FFT).
 
-##Other measurements were derived as well. They include the following: 
+###Other measurements were derived as well. They include the following: 
 * mean(): Mean value
 * std(): Standard deviation
 * mad(): Median absolute deviation 
@@ -32,14 +31,14 @@ CodeBook: Samsung Human Activity Recognition Dataset and Means Dataset
 * bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
 * angle(): Angle between to vectors.
 
-##Additional measurements were obtained by averaging signals in a signal window sample. These wereused on the angle() variables:
+###Additional measurements were obtained by averaging signals in a signal window sample. These wereused on the angle() variables:
 * gravityMean
 * tBodyAccMean
 * tBodyAccJerkMean
 * tBodyGyroMean
 * tBodyGyroJerkMean
 
-#In total, there are 561 features variables.  There were triplicates of features variables fBodyAcc-bandsEnergy() and fBodyGyro-bandsEnergy().  However, there did not appear to be any replicated datapoints so those replicates were not dropped from the dataset.  To avoid confusion, the features were given variable numbers. The total features variable list is as follows:
+##In total, there are 561 features variables.  There were triplicates of features variables fBodyAcc-bandsEnergy() and fBodyGyro-bandsEnergy().  However, there did not appear to be any replicated datapoints so those replicates were not dropped from the dataset.  To avoid confusion, the features were given variable numbers. The total features variable list is as follows:
 * tBodyAcc_mean___X v1
 * tBodyAcc_mean___Y v2
 * tBodyAcc_mean___Z v3
@@ -602,7 +601,7 @@ CodeBook: Samsung Human Activity Recognition Dataset and Means Dataset
 * tBodyAcc_mean___X v560
 * tBodyAcc_mean___Y v561
 
-#A second dataset (samsungDataMeans.rda) with features mean information was generated. There are a total of 100,980 observations and 6 variables. As none of the features have been deleted, 30 subjects with 561 features measured for 6 activites yields this number.  The variables included in dataset are as follows:
+###A second dataset (samsungDataMeans.rda) with features mean information was generated. There are a total of 100,980 observations and 6 variables. As none of the features have been deleted, 30 subjects with 561 features measured for 6 activites yields this number.  The variables included in dataset are as follows:
 * row.names - feature variable labeled with variable number followed by item number (explained below)
 * Item_Number - Number of item in total list of items in dataset; example 221 is the 221st item in the list of 100,980 observations.
 *Subject - Subject from which feature measurement was derived (30 subjects total)

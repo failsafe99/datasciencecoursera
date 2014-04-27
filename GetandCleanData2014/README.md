@@ -1,5 +1,5 @@
-Data Cleaning Course April 2014 -Human Activity Recognition Dataset
-========================
+###Data Cleaning Course April 2014 -Human Activity Recognition Dataset
+
 ###The dataset comes from the Human Activity Recognition Using Smartphones data set. The ultimate objectives are 1) concatenate both the test and train datasets to create one large dataset, 2)obtain means and standard deviations of the features measured during the experiment, and 3) create a second tidy dataset that contains the means of all the features for each subject, for each activity he or she was engaged in during the experiment.  Additionally, a Codebook that describes all of the variables in the dataset(s) was created as well as a 'READ ME' file, the contents of which you are currently reading at the moment.
 
 ###The downloaded zip file contains observations from experiments carried out on 30 volunteers who ranged in age from 19 to 48 years. Six different activities were performed by each person: walking, walking up (the stairs), walking down (the stairs), sitting, standing and laying.  While performing each activity, the volunteer wore a Samsung Galaxy S II Smartphone on their waist. The phones contained embedded accelerometers and gyroscopes, which captured 3-axial linear acceleration and 3-axial angular velocity at a rate of 50Hz.  
